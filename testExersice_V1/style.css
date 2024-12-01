@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --light-text: rgb(255, 255, 255);
+    --background-color: #0D40BF;
+    --accent:  #D64A28;
+}
+/*  */
+
+html{
+    font-family: "Montserrat", sans-serif;
+    color: var(--light-text);
+    background-color: var(--background-color);
+}
+::selection {
+    background: #4672e0; /* Safari */
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.5px;
+    color: var(--dark-text);
+    background-image: url('./src/bgSvg/svg.png');
+    background-repeat: no-repeat;
+    background-position: -600px;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* Navigation */
+
+nav{
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: normal;
+    z-index: 2;
+    padding: 20px 0px;
+    border-bottom: 1px solid #1F4EC6;
+    background-color: var(--background-color);
+}
+.navCont{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav > .navCont > div > ul {
+   padding: 0;
+}
+nav > .navCont > div > ul > li{
+    display: inline-block;
+    vertical-align: top;
+}
+nav > .navCont > div > ul > li>a{
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+nav > .navCont > div > label {    
+    display: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav > .navCont > div > label:hover{
+    color: #f00;
+    border: 1px solid #f00;
+}
+
+
+@media screen and (max-width: 610px) {
+    nav > .navCont{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    nav > .navCont > div > label{
+         display: inline-block;
+    }
+    nav > .navCont > div > ul {
+        display: none;
+    }
+
+    
+}
+.logo{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: var(--light-text);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 16px;
+}
+#logoNav{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: var(--light-text);
+}
+.nav-list>li{
+    padding: 10px;
+    border-bottom: 1px solid #1F4EC6;
+}
+.nav-list>li>a{
+    padding: 10px;
+    border-bottom: 1px solid #1F4EC6;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.nav-list__link--active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#imgMenu{
+    height: 14px;
+    width: 18px;
+}
+ /* main */
+main{
+    padding-top: 70px;
+}
+
+
+
+
+.text-with-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    margin-right: 10px; 
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: var(--light-text);
+    word-break: break-all;
+  }
+  .text>span{
+    vertical-align: middle;
+  }
+  
+  .arrays {
+    width: 80px;  
+    margin-top: 13px;
+    height: auto; 
+  }
+.mainEl__text>h2{
+    font-size: 30px;
+    color: var(--light-text);
+    font-weight: 700;
+    line-height: 120%;
+    font-family: "Montserrat", sans-serif;
+}
+.mainEl__text>p{
+    margin-top: 24px;
+    font-size: 24px;
+    color: var(--light-text);
+    font-weight: 600;
+    line-height: 130%;
+    font-family: "Montserrat", sans-serif;
+}
+.mainEl__text>img{
+    margin-top: 24px;
+}
+.mainEl__text{
+    width: 640px;
+}
+
+.mainEl{
+    display: flex;
+    
+    margin-top: 56px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 56px;
+}
+.mainImg{
+    width: 470px;
+}
+.mainEl1{
+    display: flex;
+    
+    margin-top: 56px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.secondMainTextEl{
+    margin-top: 80px;
+    
+}
+.mainFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.secondMainTextEl>h1{
+    font-size: 42px;
+    color: var(--light-text);
+    font-weight: 700;
+    line-height: 125%;
+    font-family: "Montserrat", sans-serif;
+}
+.elMainText{
+    font-size: 24px;
+    color: var(--light-text);
+    font-weight: 600;
+    line-height: 130%;
+    font-family: "Montserrat", sans-serif;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.flexForTextMain{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.flexForTextMain>em{
+    font-size: 72px;
+    color: var(--accent);
+    font-weight: 700;
+    line-height: 125%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+.mainBox{
+    background-color:  #0D40BF;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(13, 202, 240, 1);
+-moz-box-shadow: 0px 0px 30px 0px rgba(13, 202, 240, 1);
+box-shadow: 0px 0px 30px 0px rgba(13, 202, 240, 1);
+border-radius: 32px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+option{
+    text-transform: capitalize;
+}
+.boxEl{
+    width: 335px;
+    margin: 24px ;
+    flex-grow: 1;
+}
+.boxEl>p{
+    font-size: 15px;
+    color: var(--light-text);
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.boxEl>select{
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    appearance: none;
+    background: url('./src/arraySelect.png') no-repeat right white;
+    background-position-x: calc(100% - 20px);
+
+    margin-top: 8px;
+}
+
+
+select:active, select:focus{
+    outline:none
+
+}
+/* Внешняя тень
+X:0 Y:0 Размытие: 30 расширение: 0 rgb(13, 202, 240) */
