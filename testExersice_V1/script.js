@@ -2,6 +2,7 @@ let btnMenu = document.getElementById("btn-menu")
 let menu = document.getElementById("menuNav")
 let flag = 0;
 
+console.log("1")
 btnMenu.onclick = function(){
     if (flag) {
         menu.innerHTML = ``

@@ -23,6 +23,7 @@ html, body {
     background-repeat: no-repeat;
     background-position: -600px;
     overflow-x: hidden;
+
 }
 .container{
     max-width: 1200px;
@@ -79,19 +80,26 @@ nav > .navCont > div > label:hover{
     border: 1px solid #f00;
 }
 
-
-@media screen and (max-width: 610px) {
-    nav > .navCont{
-        display: flex;
+#btn-menu {
+    display: none;
+}
+@media screen and (max-width: 630px) {
+    .navCont {
         flex-direction: row-reverse;
     }
-    nav > .navCont > div > label{
-         display: inline-block;
-    }
-    nav > .navCont > div > ul {
-        display: none;
+    
+    #btn-menu + label {
+        display: block;
     }
 
+    .navCont > div > ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        list-style-type: none;
+        padding-left: 0;
+        width: 100%;
+    }
     
 }
 .logo{
